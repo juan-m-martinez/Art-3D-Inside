@@ -1,0 +1,77 @@
+.index-header {
+  height: auto;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.index-header .logo {
+  max-width: 260px;
+  height: auto;
+  object-fit: contain;
+  margin: 2em auto;
+}
+.index-header .navbar {
+  overflow: visible;
+}
+.index-header .navbar {
+  position: relative;
+  z-index: 20;
+  background-color: #000;
+  overflow: visible;
+}
+.index-header .navbar-collapse {
+  transition: all 0.3s ease-in-out;
+}
+.index-header .nav-item a:hover {
+  color: #fff;
+  transform: translateY(-20px);
+  transition: transform 1s ease-in;
+  background-color: #000;
+}
+.index-header .nav-item a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  display: inline-block;
+}
+.index-header .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 30;
+  background-color: #000;
+  color: white;
+}
+.index-header .dropdown-menu a {
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  display: block;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 120px;
+    margin: 1em auto;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #000;
+    padding: 1em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 25;
+  }
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
