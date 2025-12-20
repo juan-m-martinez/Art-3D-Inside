@@ -1,1 +1,34 @@
-$primary-text: text
+// Colores
+$text-color: #000000;
+$carousel-color: #00000062;
+$principal-bg: #222;
+$subtext-color: #f8f9fa;
+$footer-border: #444;
+
+
+// Tipografía
+$font-stack: "Darker Grotesque", sans-serif;
+
+// Titulos
+@mixin titulo-base {
+    font-size: 3em;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0.5em;
+    font-weight: bold;
+    background-color: #00000010;
+}
+
+@mixin titulos-footer {
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0.5em;
+    font-weight: bold;
+}
+
+$text-base: 1.5em;
+
+// Espaciados
+$padding-base: 1rem;
+$margin-base: 1.5rem;

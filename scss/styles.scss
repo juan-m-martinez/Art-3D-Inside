@@ -7,5 +7,11 @@
 @import './utilities/media';
 
 
-
-
+* {
+  /* bordes eliminados */
+  margin: 0;
+  /* rellenos que vienen por defaul */
+  padding: 0;
+  /* fonts Darker Grotesque */
+  font-family: "Darker Grotesque", sans-serif;
+}

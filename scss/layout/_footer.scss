@@ -1,0 +1,65 @@
+footer {
+    background-color: $principal-bg;
+    color: $subtext-color;
+    padding: 1rem 0;
+
+    h4 {
+        @include titulos-footer
+    }
+
+    h6 {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+
+            a {
+                color: $subtext-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    // Íconos generales
+    .icon {
+        width: 40px;
+        object-fit: contain;
+        padding: 4px;
+        background-color: #fff;
+        border: 1px solid $footer-border;
+        border-radius: 6px;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+    }
+
+    // Íconos de medios de pago/envíos
+    .footer-icon {
+        width: 90px;
+        object-fit: contain;
+        padding: 4px;        
+        border-radius: 6px;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+        
+    }
+
+    // Sección final
+    .footer-bottom {
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid $footer-border;
+    }
+}
