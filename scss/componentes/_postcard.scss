@@ -1,0 +1,127 @@
+.product-card {
+    @include card-style;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+    .img-fluid {
+        width: 25%;
+        height: auto;
+    }
+    .container-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+
+        .product-title {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: $text-color;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: $text-color;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-size: 2rem;
+            margin: 12px 0;
+
+            .current {
+                color: $precio-actual;
+                font-weight: bold;
+            }
+
+            .old {
+                text-decoration: line-through;
+                margin-left: 8px;
+                color: $precio-viejo;
+            }
+
+            .discount {
+                margin-left: 8px;
+                color: $color-discount;
+                font-weight: bold;
+            }
+        }
+
+        .payment,
+        .rating,
+        .shipping {
+            font-size: 1.5rem;
+            margin-bottom: 6px;
+            color: $text-color;
+        }
+
+        .btn-buy {
+            align-items: center;
+            font-size: 20px;
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 0.2em 1em;
+            border-radius: 0.5em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px) scale(1);
+            }
+
+            .product-info {
+                font-size: 2rem;
+            }
+
+
+        }
+    }
+}
+
+.related {
+    margin-top: 25px;
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: $text-color;
+        padding: 0px 25px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+
+            img {
+                width: 100px;
+                height: auto;
+                margin-right: 10px;
+                border-radius: 4px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $text-color;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $precio-actual;
+                }
+            }
+        }
+    }
+}

@@ -4,6 +4,17 @@ $carousel-color: #00000062;
 $principal-bg: #222;
 $subtext-color: #f8f9fa;
 $footer-border: #444;
+$color-inside: #00FF85;
+$precio-actual: #e63946;
+$precio-viejo: #777;
+$discount-color: #2a9d8f;
+$button-color: #ffcc00;
+$button-hover: #f4b400;
+$shadow: 0 4px 10px #0000001a;
+$bg-color: #fff;
+$color-discount: #FFA500;
+
+
 
 
 // Tipografía
@@ -19,6 +30,15 @@ $font-stack: "Darker Grotesque", sans-serif;
     background-color: #00000010;
 }
 
+@mixin text-main {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: $subtext-color;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
 @mixin titulos-footer {
     font-size: 1.5em;
     text-align: center;
@@ -26,6 +46,46 @@ $font-stack: "Darker Grotesque", sans-serif;
     margin: 0.5em;
     font-weight: bold;
 }
+
+@mixin lista {
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+
+            a {
+                color: $subtext-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $color-inside;
+                }
+            }
+        }
+    }
+}
+
+@mixin card-style {
+    border: 1px solid $precio-viejo;
+    border-radius: 10px;
+    background: $bg-color;
+    padding: auto;
+
+    &:hover {
+        transform: translateY(-10px) scale(1.05); // se levanta un poco 
+        box-shadow: 0 8px 20px #005D54; // sombra elegante
+    }
+
+    box-shadow: $shadow;
+}
+
+
+
 
 $text-base: 1.5em;
 
