@@ -1,0 +1,172 @@
+// ===========================================
+// MEDIA QUERIES - MOBILE FIRST
+// ===========================================
+// Breakpoints Bootstrap:
+// - Mobile: 0-576px (estilos base en archivos principales)
+// - Tablet: 577px-992px
+// - Desktop: 993px+
+// ===========================================
+
+// ===========================================
+// SECCIÓN 1: TABLET (577px - 992px)
+// ===========================================
+@media (min-width: 577px) {
+
+  // --- HEADER ---
+  .index-header {
+    .nav-inicio {
+      .logo {
+        max-width: 150px; // Aumentar logo en tablet
+      }
+    }
+  }
+
+  // --- CARDS (2 por fila en tablet) ---
+  .cards-row {
+    padding: 1rem 2rem; // Más padding lateral
+  }
+
+  .card-item {
+    flex: 1 1 calc(50% - 1rem); // 2 cards por fila
+  }
+
+  // --- CAROUSEL ---
+  .carousel {
+    img {
+      height: 45vh; // Aumentar altura en tablet
+    }
+  }
+
+  // --- TÍTULOS ---
+  h2 {
+    font-size: 2.2em; // Aumentar títulos
+  }
+
+  // --- PRODUCT CARD (página producto) ---
+  .product-card {
+    margin: 1.5rem;
+
+    .img-fluid {
+      width: 40%; // Imagen más pequeña en tablet
+    }
+
+    .container-card {
+      flex-direction: row; // Volver a fila en tablet
+      padding: 20px;
+    }
+  }
+}
+
+// ===========================================
+// SECCIÓN 2: DESKTOP (993px+)
+// ===========================================
+@media (min-width: 993px) {
+
+  // --- HEADER ---
+  .index-header {
+    .nav-inicio {
+      .logo {
+        max-width: 200px; // Logo tamaño original desktop
+      }
+    }
+  }
+
+  // --- CARDS (4 por fila en desktop) ---
+  .cards-row {
+    padding: 1rem 1.5rem; // Padding uniforme 1.5rem
+  }
+
+  .card-item {
+    flex: 1 1 22%; // 4 cards por fila (mantener original)
+  }
+
+  // --- CAROUSEL ---
+  .carousel {
+    img {
+      height: 50vh; // Altura original desktop
+    }
+  }
+
+  // --- TÍTULOS ---
+  h2 {
+    font-size: 3em; // Tamaño original desktop
+  }
+
+  // --- PRODUCT CARD ---
+  .product-card {
+    margin: 2rem;
+
+    .img-fluid {
+      width: 25%; // Tamaño original desktop
+    }
+  }
+}
+
+// ===========================================
+// SECCIÓN 3: AJUSTES CRÍTICOS SOLO MÓVIL
+// ===========================================
+@media (max-width: 576px) {
+
+  // --- NAVEGACIÓN SUPERIOR ---
+  .nav-inicio {
+    .navbar {
+      flex-direction: column; // Apilar verticalmente
+      gap: 0.5rem;
+    }
+
+    .sesion ul {
+      flex-direction: column; // Apilar elementos sesión
+      gap: 0.3rem;
+    }
+
+    form.d-flex {
+      width: 100%; // Búsqueda ocupa todo el ancho
+    }
+  }
+
+  // --- FOOTER (apilar columnas) ---
+  footer {
+    .col-md-3 {
+      flex: 0 0 100%; // Forzar 100% ancho en móvil
+      max-width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    h4 {
+      font-size: 1.2em; // Reducir títulos footer
+    }
+  }
+
+  // --- CARDS: asegurar 1 por fila ---
+  .card-item {
+    flex: 1 1 100%; // Reforzar: 1 card por fila
+    max-width: 100%;
+  }
+
+  // --- BOTONES ---
+  .btn-buy {
+    font-size: 18px !important; // Reducir tamaño botón
+    padding: 0.3em 0.8em;
+  }
+
+  // --- CAROUSEL CONTROLS ---
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 35px; // Controles más pequeños
+    height: 35px;
+    margin: 0em 0.5em;
+  }
+
+  // --- PRODUCT CARD: forzar columna ---
+  .product-card {
+    flex-direction: column !important;
+
+    .container-card {
+      flex-direction: column !important;
+    }
+
+    .img-fluid {
+      width: 100% !important;
+    }
+  }
+}

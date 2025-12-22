@@ -22,12 +22,11 @@ $font-stack: "Darker Grotesque", sans-serif;
 
 // Titulos
 @mixin titulo-base {
-    font-size: 3em;
+    font-size: 1.8em;
     text-align: center;
     text-transform: capitalize;
     margin: 0.5em;
-    font-weight: bold;
-    background-color: #00000010;
+    font-weight: bold;      
 }
 
 @mixin text-main {
@@ -83,9 +82,6 @@ $font-stack: "Darker Grotesque", sans-serif;
 
     box-shadow: $shadow;
 }
-
-
-
 
 $text-base: 1.5em;
 

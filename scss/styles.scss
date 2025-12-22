@@ -1,11 +1,11 @@
+@import './utilities/variables';
 @import './layout/header';
 @import './layout/section';
 @import './layout/main';
 @import './layout/footer';
 @import '../scss/componentes/cardproducto';
-@import './utilities/variables';
-@import './utilities/media';
 @import './componentes/postcard';
+@import './utilities/media';
 
 
 * {

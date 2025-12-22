@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/stylesheet.css" rel="preload">
 </head>
 
 <body>
@@ -22,13 +22,13 @@
                         <input class="form-control me-2" type="search" placeholder="Buscas" aria-label="Search" />
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
-                    <a href="../index.html"> <img class="logo" src="../img/logo/logo-Inside.png"
-                            alt="inside 3d art"></a>
+                    <a href="../index.html"> <img class="logo" src="../img/logo/logo-Inside.png" alt="inside 3d art"
+                            loading="lazy"></a>
                     <nav class="sesion">
                         <ul>
                             <li>Hola!</li>
                             <li><a href="../index.html#card-tienda">Tienda</a></li>
-                            <li><a href="#">🛒 Carrito</a></li>
+                            <li><a href="#"><span aria-label="Carrito de compras">🛒</span></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -92,7 +92,8 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="../img/productos/add-image-icon-template-logo-260nw-1883521450.webp"
-                                    class="img-fluid rounded-start d-block w-100" alt="Imagen de producto">
+                                    class="img-fluid rounded-start d-block w-100"
+                                    alt="Jarra térmica 3D diseño AFA 500ml">
                             </div>
                             <div class="carousel-item">
                                 <img src="../img/productos/add-image-icon-template-logo-260nw-1883521450.webp"
@@ -158,8 +159,8 @@
                     <h4>Navegación</h4>
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../index.html#nav-productos">Productos</a></li>
-                        <li><a href="../index.html#card-personalizados">Personalizados</a></li>
+                        <li><a href="#nav-productos">Productos</a></li>
+                        <li><a href="#card-personalizados">Personalizados</a></li>
                         <li><a href="#">Contactos</a></li>
                         <li><a href="#">Preguntas frecuentes</a></li>
                     </ul>
@@ -167,21 +168,27 @@
 
                 <div class="col-md-3">
                     <h4>Medios de pago</h4>
-                    <img src="../img/footer/cash@2x.png" alt="Pago en efectivo" class="footer-icon">
-                    <img src="../img/footer/mp.png" alt="Mercado Pago" class="footer-icon">
-                    <img src="../img/footer/transfer.png" alt="Transferencia bancaria" class="footer-icon">
+                    <img src="../img/footer/cash@2x.png" alt="Pago en efectivo" class="footer-icon" loading="lazy">
+                    <img src="../img/footer/mp.png" alt="Mercado Pago" class="footer-icon" loading="lazy">
+                    <img src="../img/footer/transfer.png" alt="Transferencia bancaria" class="footer-icon"
+                        loading="lazy">
 
                     <h4>Envíos</h4>
-                    <img src="../img/footer/correo-andreani.png" alt="Correo Andreani" class="footer-icon">
-                    <img src="../img/footer/correo-argentino.png" alt="Correo Argentino" class="footer-icon">
+                    <img src="../img/footer/correo-andreani.png" alt="Correo Andreani" class="footer-icon"
+                        loading="lazy">
+                    <img src="../img/footer/correo-argentino.png" alt="Correo Argentino" class="footer-icon"
+                        loading="lazy">
                 </div>
 
                 <div class="col-md-3">
                     <h4>Contáctanos</h4>
                     <ul>
-                        <li><img src="../img/footer/whatsapp.png" alt="WhatsApp" class="icon"> +54 9 11 1234-5678</li>
-                        <li><img src="../img/footer/arroba.png" alt="Email" class="icon"> info@inside3dart.com</li>
-                        <li><img src="../img/footer/ubicacion.png" alt="Ubicación" class="icon"> San Fernando, Buenos
+                        <li><img src="../img/footer/whatsapp.png" alt="WhatsApp" class="icon" loading="lazy"> +54 9 11
+                            1234-5678</li>
+                        <li><img src="../img/footer/arroba.png" alt="Email" class="icon" loading="lazy">
+                            info@inside3dart.com</li>
+                        <li><img src="../img/footer/ubicacion.png" alt="Ubicación" class="icon" loading="lazy"> San
+                            Fernando, Buenos
                             Aires
                         </li>
                     </ul>
@@ -192,7 +199,8 @@
                     <ul>
                         <li>
                             <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/inside_3dart/">
-                                <img src="../img/footer/instagram.png" alt="Instagram" class="icon">Instagram
+                                <img src="../img/footer/instagram.png" alt="Instagram" class="icon"
+                                    loading="lazy">Instagram
                             </a>
                         </li>
                     </ul>

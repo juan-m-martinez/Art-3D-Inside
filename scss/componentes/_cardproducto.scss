@@ -13,7 +13,7 @@ main {
     }
 
     .card-item {
-        flex: 1 1 22%; // reemplaza col-md-3
+        flex: 1 1 20%; // reemplaza col-md-3
         margin-bottom: 1rem; // reemplaza mb-4
 
         &:hover {
@@ -23,14 +23,14 @@ main {
 
         .card-img {
             height: 200px;
-            /* ajustá según tu diseño */
+            /* ajustá según diseño */
             object-fit: contain;
             /* recorta manteniendo proporción */
         }
 
         .card-link {
-            text-decoration: none; // reemplaza text-decoration-none
-            color: $text-color; // reemplaza text-dark
+            text-decoration: none; 
+            color: $text-color; 
             text-transform: capitalize;
         }
 
@@ -44,7 +44,7 @@ main {
             p {
                 margin-top: auto;
                 font-size: 2rem;
-                color: #85BB65;
+                color: #85BB65;                
                 font-weight: bold;
                 margin-bottom: 0.5rem;
             }
