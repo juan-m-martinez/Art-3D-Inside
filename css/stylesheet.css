@@ -236,12 +236,14 @@ main .cards-row {
 main .card-item {
   flex: 1 1 20%;
   margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.219);
 }
 main .card-item:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 8px 20px #005D54;
 }
 main .card-item .card-img {
+  padding: 1rem 0rem;
   height: 200px;
   /* ajustá según diseño */
   object-fit: contain;
@@ -399,6 +401,48 @@ main .card-item .card-body .btn-buy:hover {
 }
 .related ul li a:hover {
   color: #e63946;
+}
+
+.card-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.219);
+  background: #fff;
+}
+.card-about .about-img {
+  align-items: center;
+  padding: 2rem 0;
+  width: 25%;
+}
+.card-about .logo-img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.card-about .about-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.card-about .about-text ul {
+  list-style: none;
+  padding: 0;
+}
+.card-about .about-text {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+.card-about .card-about:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 577px) {

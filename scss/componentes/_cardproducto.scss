@@ -15,6 +15,7 @@ main {
     .card-item {
         flex: 1 1 20%; // reemplaza col-md-3
         margin-bottom: 1rem; // reemplaza mb-4
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.219);
 
         &:hover {
             transform: translateY(-10px) scale(1.05); // se levanta un poco 
@@ -22,6 +23,7 @@ main {
         }
 
         .card-img {
+            padding: 1rem 0rem;
             height: 200px;
             /* ajustá según diseño */
             object-fit: contain;
