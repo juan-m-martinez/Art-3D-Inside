@@ -37,7 +37,7 @@
         <div class="nav-bar">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -69,7 +69,7 @@
                                 <a class="nav-link" href="#">Contactos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Colores disponibles</a>
@@ -81,59 +81,58 @@
         </div>
     </header>
 
-    <main>
-        <main class="container my-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <h2 class="text-center mb-4">Crear Cuenta</h2>
-                            <form>
-                                <!-- Nombre -->
-                                <div class="mb-3">
-                                    <label for="nombre" class="form-label">Nombre completo</label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre"
-                                        required>
-                                </div>
 
-                                <!-- Email -->
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Correo electrónico</label>
-                                    <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com"
-                                        required>
-                                </div>
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">Crear Cuenta</h2>
+                        <form>
+                            <!-- Nombre -->
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre"
+                                    required>
+                            </div>
 
-                                <!-- Contraseña -->
-                                <div class="mb-3">
-                                    <label for="password" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="password"
-                                        placeholder="Ingresa tu contraseña" required>
-                                </div>
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com"
+                                    required>
+                            </div>
 
-                                <!-- Confirmar contraseña -->
-                                <div class="mb-3">
-                                    <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
-                                    <input type="password" class="form-control" id="confirmPassword"
-                                        placeholder="Repite tu contraseña" required>
-                                </div>
+                            <!-- Contraseña -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Ingresa tu contraseña" required>
+                            </div>
 
-                                <!-- Botón -->
-                                <div class="d-grid">
-                                    <button type="submit" class="btn btn-success">Crear Cuenta</button>
-                                </div>
+                            <!-- Confirmar contraseña -->
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    placeholder="Repite tu contraseña" required>
+                            </div>
 
-                                <!-- Link de inicio de sesión -->
-                                <p class="text-center mt-3">
-                                    ¿Ya tienes cuenta? <a href="./inicio-de-sesion.html">Inicia sesión aquí</a>
-                                </p>
-                            </form>
-                        </div>
+                            <!-- Botón -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success">Crear Cuenta</button>
+                            </div>
+
+                            <!-- Link de inicio de sesión -->
+                            <p class="text-center mt-3">
+                                ¿Ya tienes cuenta? <a href="./inicio-de-sesion.html">Inicia sesión aquí</a>
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>
-        </main>
-
+        </div>
     </main>
+
     <footer>
         <div class="container">
             <div class="row justify-content-around">

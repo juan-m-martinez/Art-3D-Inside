@@ -1,6 +1,7 @@
 # Tienda Online
 
 Este proyecto es una tienda online moderna y responsive, construida con **HTML**, **CSS** y un diseño totalmente personalizado.  
+
 La idea principal es ofrecer una experiencia visual coherente en **desktop, tablet y celular**, con un sistema de estilos centralizado y fácil de mantener.
 
 ## 🚀 Características
